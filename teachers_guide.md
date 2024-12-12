@@ -1,57 +1,46 @@
-Teacher's companion to teach-rs
+```markdown
+Compagnon de l'enseignant pour teach-rs
+=======================================
+
+Si vous avez décidé d'essayer teach-rs pour vos étudiants, vous rencontrerez probablement deux problèmes :
+
+1. En tant qu'académique, vous pourriez estimer que vos connaissances pratiques de Rust sont insuffisantes.
+
+2. Vous devrez sélectionner les sujets pour respecter des contraintes pratiques.
+
+Quels éléments de teach-rs devriez-vous enseigner à vos étudiants ? Et combien de temps cela prendra-t-il ?
+
+Nous supposons que vous avez une idée claire de vos objectifs pédagogiques et de votre public cible. Teach-rs peut être utilisé pour des étudiants de première année à l'université, des étudiants en master, ou même pour une formation interne destinée à des ingénieurs confirmés dans votre entreprise de logiciels, mais évidemment, chaque groupe nécessitera une approche différente !
+
+Teach-rs est un cours modulaire
 ===============================
+Nous avons défini des *pistes* spécifiques, qui consistent en des sélections de modules cohérents en fonction d'un objectif d'apprentissage et d'un public cible. Par exemple, teach-rs orienté sur la programmation Web ou teach-rs orienté sur les appareils embarqués. Vous pouvez consulter la liste complète des pistes [ici](./README.md#pre-defined-tracks) :
 
-If you have decided to try teach-rs for your students, you will probably run into two problems:
+Modularité plus fine
+--------------------
+Si vous souhaitez un contrôle plus précis sur la sélection du contenu, chaque module est structuré en plusieurs *sujets*. Un sujet est défini par un ensemble de diapositives et des exercices recommandés. Vous pouvez construire vos propres modules en sélectionnant des sujets. Nous avons défini des dépendances entre les sujets ; par exemple, si vous choisissez le sujet `basic-syntax`, vous devriez également inclure le sujet `why-rust`. Ces dépendances garantissent que votre cours reste cohérent.
 
-1. As an academic, you may feel your own practical knowledge of Rust is lacking.
+Cependant, si vous empruntez cette voie, vous devrez vous assurer vous-même que la charge de travail reste équilibrée, car, contrairement aux modules, les *sujets* n'ont pas de temps d'étude fixe associé. Par exemple, le sujet `why-rust` demandera moins de temps (et n'inclut aucun exercice pratique) que le sujet `basic-syntax`. Comme teach-rs est en développement actif, nous ne pouvons pas fournir d'estimations de temps par sujet et nous nous concentrons davantage sur l'équilibrage de la charge de travail pour le cours complet et les *pistes* prédéfinies.
 
-2. You will have to make a selection of subjects to fit practical constraints.
+Aperçu des modules et des sujets
+--------------------------------
+Les modules généraux du cours Rust peuvent être divisés en modules "communs" et "spécialisés". Les modules communs seront utiles pour toutes les pistes (par exemple, "Bases du langage"), tandis que d'autres peuvent être considérés comme optionnels (par exemple, "Rust pour le Web").
 
-So what parts of teach-rs should you invest time in to teach to your students? And how much time is required?
+Le module 0 (introduction) est recommandé dans son intégralité pour tous les cours, car il explique les motivations pour apprendre Rust et présente globalement ses fonctionnalités. Le module A contient tous les sujets liés aux fonctionnalités du langage.
 
-We assume you have a clear idea of your learning outcomes, and your target audience. Teach-rs can be used for first-year
-students at university, for master's students, or even for an internal training for senior engineers at your software company, but obviously different
-groups would require a different approach!
+Matériel de référence
+=====================
+Plusieurs ressources en ligne sont disponibles pour fournir un précieux matériel de référence pour vous (ou vos étudiants).
 
-Teach-rs is a modular course
-============================
-We have defined particular *tracks*, which consists of selections of modules that go
-well together given a certain learning outcome and target audience, for example teach-rs focussed on Web programming or teach-rs
-focussed on Embedded Devices; you can see the full list of tracks [here](./README.md#pre-defined-tracks):
+- [The Rust Programming Language](https://doc.rust-lang.org/book/index.html), un livre en ligne, également disponible [en version papier](https://nostarch.com/rust-programming-language-2nd-edition).
+- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/), une référence en ligne avec des exemples idiomatiques de code Rust.
+- [Rust for Rustaceans](https://nostarch.com/rust-rustaceans), un livre qui suppose une connaissance préalable et aborde des sujets plus avancés.
+- [Learning Rust with Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/), axé sur les règles de possession et d'emprunt de Rust.
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/), une collection de modèles idiomatiques Rust (et d'anti-modèles).
+- [The Rust Reference](https://doc.rust-lang.org/reference/index.html), une référence pour trouver des explications sur des points plus fins de syntaxe et de sémantique.
+- [The Rustonomicon](https://doc.rust-lang.org/nomicon/), une référence spécifique aux aspects bas niveau, interfaces binaires d'application et au code `unsafe`.
 
-Finer-grained modularity
-------------------------
-If you want finer-grained control over content selection, we have structured every module into a few *topics*. A topics is defined by
-a set of slides and recommended exercises. You can construct your own modules by selectiong topics. We have defined dependencies between
-topics; for example, if you pick the `basic-syntax` topic you should also select the `why-rust` topic. These dependencies ensure that
-you should still end up with a coherent course.
-
-If you take this route, however, you have to take more responsibility that the study load remains balanced, as (unlike with modules), 
-*topics* don't have a fixed study time associated with them. For example (again), the `why-rust` topic will require less time (and has no
-partical exercises attached to it) than the `basic-syntax` topic. Since teach-rs is in active development, we cannot give
-time estimates per topic and are focussing more on balancing the study load for the full course and the pre-defined *tracks*.
-
-Overview of modules and topics
-------------------------------
-General modules of the Rust course can be divided into "common" and "specialized" modules. The
-common ones will be useful for every track (for example, "Language Basics") whereas others
-can be viewed as optional (for example, "Rust for Web").
-
-Module 0 (introduction) is recommended in full for every course, since it outlines the motivation
-for learning Rust, and broadly introduces its features. Module A contains all topics related to language features.
-
-Reference material
-==================
-Several online resources exists that can provide valuable background material for you (or your students).
-
-- [The Rust Programming Language](https://doc.rust-lang.org/book/index.html), online book, also available [as paperback](https://nostarch.com/rust-programming-language-2nd-edition)
-- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/), online reference with idiomatic examples of Rust code
-- [Rust for Rustaceans](https://nostarch.com/rust-rustaceans), book that assumes some prior knowledge and dives into more advanced topics
-- [Learning Rust with Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/), focussing on Rust's ownership and borrowing rules
-- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/), a collection of idiomatic Rust patterns (and anti-patterns)
-- [The Rust Reference](https://doc.rust-lang.org/reference/index.html), a reference suitable for finding explanations for finer points of syntax and semantics.
-- [The Rustonomicon](https://doc.rust-lang.org/nomicon/), a reference that is specific to low-level aspects, application binary interfaces and `unsafe` code.
-
-Exercise solutions
-------------------
-Teach-rs is provided without answers to exercises. If you have need of those, please [contact us](mailto:hd@oordt.dev).
+Solutions des exercices
+-----------------------
+Teach-rs est fourni sans réponses aux exercices. Si vous avez besoin de ces réponses, veuillez [nous contacter](mailto:hd@oordt.dev).
+```

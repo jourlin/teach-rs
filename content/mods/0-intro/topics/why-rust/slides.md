@@ -2,90 +2,90 @@
 layout: cover
 ---
 
-# Why learn Rust?
+# Pourquoi apprendre Rust ?
 
 ---
 layout: default
 ---
-# How to choose a language
+# Comment choisir un langage
 
-What characteristics do you want?
-<!-- Try asking the audience first -->
+Quelles caractéristiques recherchez-vous ?
+<!-- Essayez de poser la question au public d'abord -->
 
 <v-click>
 
-1. Efficiency          <!-- not just fast code, also saving the planet -->
-2. Safety              <!-- preventing mistakes, but also failing gracefully -->
-3. Elegance            <!-- this is not a subjective quality -->
-4. Practical relevance <!-- this excludes favourite toy languages -->
+1. Efficacité          <!-- pas seulement un code rapide, mais aussi préserver la planète -->
+2. Sécurité            <!-- prévenir les erreurs, mais aussi échouer de manière contrôlée -->
+3. Élégance            <!-- ce n'est pas une qualité subjective -->
+4. Pertinence pratique <!-- cela exclut les langages "jouets" préférés -->
 
-Most languages tick two of these boxes, if you are lucky you get three.
+La plupart des langages cochent deux de ces cases, avec un peu de chance trois.
 
 </v-click>
 
 ---
 layout: default
 ---
-# What Rust promises
+# Ce que Rust promet
 
-1. Pedal to the metal
-2. Comes with a warranty
-3. Beautiful code
-4. Rust is practical
-
----
-layout: default
----
-# Pedal to the metal
-
-- Compiled language, not interpreted
-- State-of-the-art code generation using LLVM
-- No garbage collector getting in the way of execution
-- Usable in embedded devices, operating systems and demanding websites
+1. Performance maximale
+2. Accompagne avec une garantie
+3. Code élégant
+4. Rust est pratique
 
 ---
 layout: default
 ---
-# Rust comes with a warranty
+# Performance maximale
 
-- Strong type system helps prevent silly bugs
-- Explicit errors instead of exceptions
-- Type system tracks lifetime of objects
-	* No more *"null pointer exception"*
-- Programs don't trash your system accidentally
-	* Warranty *can* be voided (`unsafe`)
-
-*"If it compiles, it is more often correct."*
+- Langage compilé, pas interprété
+- Génération de code à la pointe grâce à LLVM
+- Pas de garbage collector qui perturbe l'exécution
+- Utilisable dans les appareils embarqués, systèmes d'exploitation et sites web exigeants
 
 ---
 layout: default
 ---
-# Rust code is elegant
+# Rust accompagne avec une garantie
 
-- Data types can capture many problem domains
-- Orthogonal, expression-oriented language
-- Combine declarative and imperative paradigms
-- Concise syntax instead of boilerplate
-- Toolchain that suggests improvements to your code
+- Un système de types robuste qui aide à éviter les bugs simples
+- Des erreurs explicites au lieu d'exceptions
+- Le système de types suit la durée de vie des objets
+	* Fini les *"null pointer exception"*
+- Les programmes ne corrompent pas votre système accidentellement
+	* La garantie *peut* être annulée (`unsafe`)
 
----
-layout: default
----
-# Rust is practical
-
-- Can interface with legacy C code
-- Supported on many platforms
-- Active user base maintains a healthy ecosystem
-- Adoption by Microsoft, Amazon, Google, ...
+*"Si ça compile, c'est plus souvent correct."*
 
 ---
 layout: default
 ---
-# Why should *you* learn Rust?
+# Le code Rust est élégant
 
-- Learning a new language teaches you new tricks
-	* You will also write better C/C++ code
+- Les types de données peuvent capturer de nombreux domaines problématiques
+- Langage orthogonal et orienté expressions
+- Combine paradigmes déclaratif et impératif
+- Syntaxe concise au lieu de code répétitif
+- Chaîne d'outils qui suggère des améliorations à votre code
 
-- Rust is a young, but quickly growing platform
-	* You can help shape its future
-	* Demand for Rust programmers will increase!
+---
+layout: default
+---
+# Rust est pratique
+
+- Peut interfacer avec du code C hérité
+- Supporté sur de nombreuses plateformes
+- Une base d'utilisateurs active maintient un écosystème sain
+- Adopté par Microsoft, Amazon, Google, ...
+
+---
+layout: default
+---
+# Pourquoi *vous* devriez apprendre Rust ?
+
+- Apprendre un nouveau langage vous enseigne de nouvelles techniques
+	* Vous écrirez aussi de meilleur code C/C++
+
+- Rust est une plateforme jeune, mais en rapide croissance
+	* Vous pouvez aider à façonner son futur
+	* La demande pour les programmeurs Rust va augmenter !

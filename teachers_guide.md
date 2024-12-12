@@ -1,4 +1,3 @@
-```markdown
 Compagnon de l'enseignant pour teach-rs
 =======================================
 
@@ -43,4 +42,3 @@ Plusieurs ressources en ligne sont disponibles pour fournir un précieux matéri
 Solutions des exercices
 -----------------------
 Teach-rs est fourni sans réponses aux exercices. Si vous avez besoin de ces réponses, veuillez [nous contacter](mailto:hd@oordt.dev).
-```

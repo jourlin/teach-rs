@@ -3,61 +3,61 @@
 
 ![Teach-rs](https://tweedegolf.nl/images/teach-rs-logo.png)
 
-Teach-rs is a university course for computer science students, introducing the Rust Programming Language, and is available for anyone who wants to teach Rust.
+Teach-rs est un cours universitaire destiné aux étudiants en informatique, introduisant le langage de programmation Rust. Il est également accessible à tous ceux qui souhaitent enseigner Rust.
 
-Why? Have a look at our [blog post](https://tweedegolf.nl/en/blog/127/want-more-rust-break-the-cycle) introducing the course.
+Pourquoi ? Consultez notre [article de blog](https://tweedegolf.nl/en/blog/127/want-more-rust-break-the-cycle) pour découvrir l'objectif du cours.
 
-This repo will contain everything that's needed to organize the course: slides, exercises, tools, setup instructions and more.
+Ce dépôt contient tout ce qui est nécessaire pour organiser le cours : diapositives, exercices, outils, instructions de configuration et plus encore.
 
-*While all the available material is user-ready, this repo is not yet as exhaustive as we'd like, so feedback and [contributions](./CONTRIBUTING.md) are welcome! So is sponsorship; read more below or on our [Sponsorship page](https://github.com/sponsors/trifectatechfoundation).*
+*Bien que tout le matériel disponible soit prêt à l'emploi, ce dépôt n'est pas encore aussi exhaustif que nous le souhaiterions. Vos retours et [contributions](./CONTRIBUTING.md) sont donc les bienvenus ! Nous acceptons également les parrainages ; lisez-en plus ci-dessous ou sur notre [page de parrainage](https://github.com/sponsors/trifectatechfoundation).*
 
-**Need help? Have questions? Say hi in our Matrix channel: [![Matrix](https://img.shields.io/badge/Matrix-000?logo=matrix&logoColor=fff)](https://matrix.to/#/#teach-rs:matrix.org)**
+**Besoin d'aide ? Des questions ? Venez discuter sur notre canal Matrix : [![Matrix](https://img.shields.io/badge/Matrix-000?logo=matrix&logoColor=fff)](https://matrix.to/#/#teach-rs:matrix.org)**
 
-## Usage
-The teacher's guide can be found [here](./teachers_guide.md).
-Have a look at the [ModMod Readme](./modmod/README.md) for instructions on how to render the content of a track.
+## Utilisation
+Le guide de l'enseignant est disponible [ici](./teachers_guide.md).  
+Consultez le [README ModMod](./modmod/README.md) pour les instructions sur le rendu du contenu d'une piste.
 
 ## Structure
-The actual content can be found in the [`content`](./content) directory.
-The content is structured in a tree of Tracks, Modules, Units, and Topics.
-Tracks define a single course, which consists of one or more Modules, which again combines one or more Units, which again is a set of Topics.
-Units roughly correspond to one lecture+tutorial (or at least that is the idea, but TODO), and consist of several Topics. Related Units are combined in a Module.
-Topics are packages that cover a single topic, and include a small number of slides, some exercises, and an exercise descripion.
-Topics can define their learning objectives, further reading material, and how they should be summarized in a Unit introduction.
+Le contenu se trouve dans le répertoire [`content`](./content).  
+Il est structuré en un arbre de Pistes, Modules, Unités et Sujets.  
+- **Pistes** : définissent un cours complet, composé de plusieurs modules.  
+- **Modules** : regroupent des unités liées entre elles.  
+- **Unités** : correspondent généralement à une leçon + tutoriel et sont constituées de plusieurs sujets.  
+- **Sujets** : couvrent un thème unique et comprennent des diapositives, des exercices et une description des exercices.  
 
-Tracks, Modules, Units, and Topics and the files they refer to are described in the several TOML files in the [`content`](./content) directory.
-[ModMod](./modmod/README.md) combines the content into a structure that can be directly published to your students in a Git repo, for instance.
+Les Pistes, Modules, Unités, Sujets et les fichiers associés sont décrits dans plusieurs fichiers TOML dans le répertoire [`content`](./content).  
+[ModMod](./modmod/README.md) combine le contenu en une structure directement publiable, par exemple dans un dépôt Git destiné aux étudiants.
 
-## Pre-defined tracks
-- [Rust Language Introduction](./content/rust-intro.track.toml) aims to introduce the basics to the Rust programming language, and to enable students to engineer their own applications and crates.
-- [Rust for the Web](./content/rust-for-web.track.toml) covers content that is needed to use Rust in web applications.
-- [Rust for Systems Programming](./content/rust-for-systems.track.toml) contains more low-level topics, to teach systems programming using Rust.
-- [Scientific Rust](./content/scientific-rust.track.toml) is about using Rust in scientific programming.
-- [Full](./content/full.track.toml) contains all available teach-rs content.
+## Pistes prédéfinies
+- [Introduction au langage Rust](./content/rust-intro.track.toml) : introduction aux bases du langage Rust, pour permettre aux étudiants de développer leurs propres applications et crates.
+- [Rust pour le Web](./content/rust-for-web.track.toml) : contenu nécessaire pour utiliser Rust dans des applications web.
+- [Rust pour la programmation système](./content/rust-for-systems.track.toml) : sujets bas niveau pour enseigner la programmation système avec Rust.
+- [Rust scientifique](./content/scientific-rust.track.toml) : utilisation de Rust dans la programmation scientifique.
+- [Complet](./content/full.track.toml) : inclut tout le contenu disponible de teach-rs.
 
-*Note: although the outline of the tracks is mostly complete, the tracks may still contain TODOs. You're invited to contribute your own content to fix these!*
+*Note : bien que les plans des pistes soient presque terminés, elles peuvent encore contenir des TODOs. N'hésitez pas à contribuer pour enrichir le contenu !*
 
-## High-level goals
-Teach-rs aims to provide an open-source course, lectures, tutorials and exercises, that can be used by any higher education institution.
-Use one of the pre-defined tracks, or compose your own with the content we provide and your own.
+## Objectifs généraux
+Teach-rs vise à fournir un cours open-source, comprenant des conférences, tutoriels et exercices, utilisable par toute institution d'enseignement supérieur.  
+Utilisez une des pistes prédéfinies ou composez la vôtre avec le contenu proposé et vos propres ressources.
 
-1. Provide a modular, resuable basis for live-taught Rust courses
-2. Provide students with practical, hands-on experience
-3. Provide students with background information of Rust features
-4. Provide students with ability to judge whether Rust fits a project
-5. Provide several specialized learning tracks that focus on different applications (e.g. systems, embedded, web)
-6. Enable teachers to contribute their material for others to use
+1. Fournir une base modulaire et réutilisable pour des cours Rust en présentiel.  
+2. Offrir une expérience pratique et concrète aux étudiants.  
+3. Fournir des informations de fond sur les fonctionnalités de Rust.  
+4. Aider les étudiants à évaluer l'adéquation de Rust à leurs projets.  
+5. Proposer plusieurs pistes spécialisées axées sur différentes applications (systèmes, embarqué, web, etc.).  
+6. Permettre aux enseignants de contribuer leur matériel pour qu'il soit utile à d'autres.
 
-## Contributing
-If you'd like to improve teach-rs, either by doing touchups, restructuring a module, or even adding a module, please refer to the [contributing guidelines](./CONTRIBUTING.md) before you get started.
+## Contribuer
+Si vous souhaitez améliorer teach-rs, que ce soit en retouchant, restructurant un module ou en ajoutant un nouveau module, veuillez consulter les [directives de contribution](./CONTRIBUTING.md) avant de commencer.
 
-## About the project
+## À propos du projet
 
-The project was created by [Tweede golf](https://tweedegolf.nl), and has since moved to the [Trifecta Tech Foundation](https://trifectatech.org).
+Le projet a été créé par [Tweede golf](https://tweedegolf.nl) et est maintenant maintenu par la [Trifecta Tech Foundation](https://trifectatech.org).
 
-### Our sponsors
+### Nos sponsors
 
-#### Founding sponsors
+#### Sponsors fondateurs
 
 <img style="margin: 1rem 5% 1rem 5%;" src="./assets/STU_FIIT_logo_100_color.png" alt="Logo STU FIIT"  width="200px" />
 
@@ -67,19 +67,18 @@ The project was created by [Tweede golf](https://tweedegolf.nl), and has since m
 
 <img style="margin: 1rem 5% 1rem 5%;" src="./assets/Rust_Foundation_logo_100_color.png" alt="Logo RF"  width="200px" />
 
+Le sponsor initial du projet est la Faculté d'informatique et des technologies de l'information (FIIT) de l'Université technique slovaque (STU) à Bratislava, Slovaquie. La contribution de [FIIT](https://www.fiit.stuba.sk/en.html?page_id=749) a permis de poser les bases du cours. [Tweede golf](https://tweedegolf.nl/en) et [Rust Edu](https://rust-edu.org/) ont également grandement contribué à la création de teach-rs.  
 
-The project's initial sponsor is the Faculty of Informatics and Information Technologies (FIIT) of the Slovak University of Technology (STU) in Bratislava, Slovakia. [FIIT](https://www.fiit.stuba.sk/en.html?page_id=749)'s contribution has enabled us to lay the groundwork for the course. [Tweede golf](https://tweedegolf.nl/en) and [Rust Edu](https://rust-edu.org/) have also contributed substantially to the creation of teach-rs.
+De plus, l'un de nos mainteneurs, [@hdoordt](https://github.com/hdoordt), a reçu une subvention de la [Rust Foundation](https://foundation.rust-lang.org/).
 
-In addition, one of our maintainers, [@hdoordt](https://github.com/hdoordt), received a grant from the [Rust Foundation](https://foundation.rust-lang.org/).
+#### Sponsors argent
 
-#### Silver sponsors
+Un grand merci à nos sponsors argent :  
 
-And a big thank you to our Silver sponsors:
+- [Gofore](https://gofore.com/en/)  
+- [RustJobs.dev](https://rustjobs.dev/)  
 
-- [Gofore](https://gofore.com/en/)
-- [RustJobs.dev](https://rustjobs.dev/)
+### Soutenir teach-rs
 
-### Support teach-rs
-
-Contact us if you´re interested in financially supporting the maintenance and further development of the teach-rs resources. See [trifectatech.org/support](https://trifectatech.org/support/).
-You can also sponsor our work through [GitHub sponsors](https://github.com/sponsors/trifectatechfoundation).
+Contactez-nous si vous êtes intéressé par un soutien financier pour la maintenance et le développement des ressources teach-rs. Consultez [trifectatech.org/support](https://trifectatech.org/support/).  
+Vous pouvez également parrainer notre travail via [GitHub sponsors](https://github.com/sponsors/trifectatechfoundation).

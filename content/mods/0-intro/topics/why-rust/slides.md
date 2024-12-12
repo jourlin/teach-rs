@@ -16,10 +16,10 @@ Quelles caractéristiques recherchez-vous ?
 
 1. Efficacité          <!-- pas seulement un code rapide, mais aussi préserver la planète -->
 2. Sécurité            <!-- prévenir les erreurs, mais aussi échouer de manière contrôlée -->
-3. Élégance            <!-- ce n'est pas une qualité subjective -->
+3. Élégance            <!-- ce n'est pas une qualité subjective (mais intersubjective) -->
 4. Pertinence pratique <!-- cela exclut les langages "jouets" préférés -->
 
-La plupart des langages cochent deux de ces cases, avec un peu de chance trois.
+La plupart des langages cochent deux de ces cases, avec peu de chance trois.
 
 </v-click>
 
@@ -29,7 +29,7 @@ layout: default
 # Ce que Rust promet
 
 1. Performance maximale
-2. Accompagne avec une garantie
+2. Est accompagné d'une garantie
 3. Code élégant
 4. Rust est pratique
 
@@ -46,7 +46,7 @@ layout: default
 ---
 layout: default
 ---
-# Rust accompagne avec une garantie
+# Rust est accompagné d'une garantie
 
 - Un système de types robuste qui aide à éviter les bugs simples
 - Des erreurs explicites au lieu d'exceptions
@@ -55,7 +55,7 @@ layout: default
 - Les programmes ne corrompent pas votre système accidentellement
 	* La garantie *peut* être annulée (`unsafe`)
 
-*"Si ça compile, c'est plus souvent correct."*
+*"Si ça compile, c'est plus le plus souvent correct."*
 
 ---
 layout: default
